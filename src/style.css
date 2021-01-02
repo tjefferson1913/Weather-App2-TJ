@@ -36,5 +36,7 @@ body {
   .weather-app {
     max-width: 590px;
     margin: 0 auto;
+    border: 1px solid #dadde1;
+    padding: 20px;
   }
   
