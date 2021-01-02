@@ -32,4 +32,8 @@ body {
     margin-top: 40px;
     position: center;
   }
+
+  .weather-app {
+    max-width: 600px;
+  }
   
