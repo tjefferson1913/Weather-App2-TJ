@@ -35,5 +35,6 @@ body {
 
   .weather-app {
     max-width: 590px;
+    margin: 0 auto;
   }
   
