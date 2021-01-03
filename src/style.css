@@ -71,3 +71,8 @@ body {
     font-size: 40px;
     font-weight: 400;
   }
+
+  .temperature-units {
+    position: relative;
+    font-size: 16px;
+  }
