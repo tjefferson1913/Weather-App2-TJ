@@ -43,6 +43,7 @@ function formatDate(date) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
     celsiusTemperature = response.data.main.temp;
+    temperatureElement.innerHTML = celsiusTemperature;
     //temperatureElement = 26;
   }
   
