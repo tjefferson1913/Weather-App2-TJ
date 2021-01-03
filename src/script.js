@@ -42,6 +42,8 @@ function formatDate(date) {
   
   function convertToCelsius(event) {
     event.preventDefault();
+    celsiusLink.classList.add("active");
+    fahrenheitLink.classList.remove("active");
     let temperatureElement = document.querySelector("#temperature");
     celsiusTemperature = Math.round(response.data.main.temp);
     temperatureElement.innerHTML = Math.round(celsiusTemperature);
