@@ -55,9 +55,9 @@ body {
   }
   
   .weather-search-form {
-    margin-top: 40px;
+    margin-top: 30px;
     position: absolute;
-    right: 13px;
+    right: 10px;
   }
 
   .weather-app {
