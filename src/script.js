@@ -33,7 +33,7 @@ function formatDate(date) {
     //return `${day}, ${month} ${currentDate}, ${year}`;
   }
 
-  function formatHours(date) {
+ /* function formatHours(date) {
     //let date =new Date(timestamp);
     let hours = date.getHours();
     if (hours < 10) {
@@ -47,7 +47,7 @@ function formatDate(date) {
    
     return `${hours}:${minutes}`;
 
-  }
+  }*/
 
   function convertToFahrenheit(event) {
     event.preventDefault();
@@ -94,7 +94,6 @@ function formatDate(date) {
     forecastElement.innerHTML = `
     <div class="col-2">
     <h3>
-    ${formatHours(forecast.dt * 1000)}  
     </h3>   
     <img
       src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
