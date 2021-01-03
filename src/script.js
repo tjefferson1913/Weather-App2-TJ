@@ -91,7 +91,7 @@ function formatDate(date) {
 
     for (let index =0; index < 6; index++) {
     forecast = response.data.list[index];
-    forecastElement.innerHTML = `
+    forecastElement.innerHTML += `
     <div class="col-2">
     <h3>
     </h3>   
