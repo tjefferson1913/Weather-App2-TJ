@@ -96,7 +96,7 @@ function formatDate(date) {
     <h3>
       </h3>   
     <img
-      src="https://openweathermap.org/img/wn/${forecast.data.weather[0].icon}@2x.png"
+      src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
     />
     <div class="weather-forecast-temperature">
     <strong>${Math.round(forecast.main.temp_max)}°F</strong> |  
