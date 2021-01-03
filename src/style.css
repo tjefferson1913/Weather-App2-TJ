@@ -76,3 +76,7 @@ body {
     position: relative;
     font-size: 16px;
   }
+
+  .i {
+    margin-left: 5px;
+  }
