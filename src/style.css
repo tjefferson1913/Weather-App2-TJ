@@ -100,4 +100,11 @@ body {
     width: 30px;
   }*/
 
+  .img {
+    float: left;
+    height: 64px;
+    margin-top: unset;
+    width: 64px;
+}
+
   
