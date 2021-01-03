@@ -4,13 +4,14 @@ body {
   }
   
   h1 { font-family: "Brush Script MT", cursive; 
-    font-size: 34px; 
+    font-size: 40px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 900; 
     line-height: 48px; 
     margin : 0;
     color: black;
+    text-align: center;
   }
   
   /*  old h1
