@@ -28,7 +28,8 @@ function formatDate(date) {
     let year = date.getFullYear();
     let currentDate = date.getDate();
   
-    return `${day}, ${month} ${currentDate}, ${year}  ${hours}:${minutes}`;
+   // return `${day}, ${month} ${currentDate}, ${year}  ${hours}:${minutes}`;
+    return `${day}, ${month} ${currentDate}, ${year}`;
   }
   function convertToFahrenheit(event) {
     event.preventDefault();
