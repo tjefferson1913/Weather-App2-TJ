@@ -69,6 +69,7 @@ function formatDate(date) {
   }
   function displayForecast(response) {
     let forecastElement = document.querySelector("#forecast");
+    let forecast = response.data.list[0];
 
     forecastElement.innerHTML = `
     <div class="col-2">
@@ -79,8 +80,9 @@ function formatDate(date) {
     <br />
     <br />
     <span> 
-                        <a href="#" id="fahrenheit-link">78°F</a> /            
-                        <a href="#" id="celsius-link">25°C</a> 
+    <div class="weather-forecast-temperature">
+    <strong>${forecast.main.temp_max}</strong> 78°F                     
+    </div>
                         </span>
     </div>`;
   }
