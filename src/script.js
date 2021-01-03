@@ -73,17 +73,13 @@ function formatDate(date) {
 
     forecastElement.innerHTML = `
     <div class="col-2">
-        Mon
-        <br />
-        <br />    
+       12:00
+        <br />   
     <i class="fas fa-sun sunicon1"></i>
     <br />
-    <br />
-    <span> 
     <div class="weather-forecast-temperature">
     <strong>${forecast.main.temp_max}</strong>°F                     
     </div>
-                        </span>
     </div>`;
   }
 
