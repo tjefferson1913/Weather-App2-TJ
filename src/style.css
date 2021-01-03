@@ -85,3 +85,9 @@ body {
     height: 64px;
     width: 64px;
   }
+
+  .icon {
+    margin-left: 5px;
+    height: 60px;
+    width: 60px;
+  }
