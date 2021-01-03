@@ -97,5 +97,5 @@ function formatDate(date) {
   let iconElement = documnet.querySelector("#icon");
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
-  iconElement.setAttribute("src",` http://openweathermap.org/img/wn/${response.data.weather.[0].icon}@2x.png`);
+  iconElement.setAttribute("src",` http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   iconElement.setAttribute("alt",response.data.weather[0].description);
