@@ -80,6 +80,14 @@ body {
     top: -15px;
   }
 
+  .temperature .active {
+    color: rgb(33,33,33);
+    cursor: default;
+  }
+  
+  .temperature .active:hover {
+    text-decoration: none;
+  }
   /*.img {
     margin-left: 5px;
     height: 30px;
@@ -91,3 +99,5 @@ body {
     height: 30px;
     width: 30px;
   }*/
+
+  
