@@ -56,7 +56,7 @@ body {
   
   .weather-search-form {
     margin-top: 40px;
-    /*position: center;*/
+    position: absolute;
     right: 15px;
   }
 
