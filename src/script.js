@@ -1,15 +1,7 @@
 /* eslint-disable no-unused-vars */
-function formatDate(date) {
-    let hours = date.getHours();
-    if (hours < 10) {
-      hours =`0${hours}`;
-    }
-  
-    let minutes = date.getMinutes();
-    if (minutes < 10) {
-      minutes =`0${minutes}`;
-    }
-  
+function formatDate(timestamp) {
+   let date =new Date(timestamp);
+
     let dayValue = date.getDay();
     let days = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Friday", "Saturday"];
   
@@ -39,6 +31,7 @@ function formatDate(date) {
   }
 
   function formatHours(timestamp) {
+    let date =new Date(timestamp);
     let hours = date.getHours();
     if (hours < 10) {
       hours =`0${hours}`;
