@@ -64,13 +64,34 @@ function formatDate(date) {
     let iconElement = document.querySelector("#icon");
     let descriptionElement = document.querySelector("#description");
     descriptionElement.innerHTML = response.data.weather[0].description;
-    iconElement.setAttribute("src",` http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    iconElement.setAttribute("src",` https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     iconElement.setAttribute("alt",response.data.weather[0].description);
   }
+  function displayForecast(response) {
+    let forecastElement = document.querySelector("#forecast");
+
+    forecastElement.innerHTML = `
+    <div class="col-2">
+        Mon
+        <br />
+        <br />    
+    <i class="fas fa-sun sunicon1"></i>
+    <br />
+    <br />
+    <span> 
+                        <a href="#" id="fahrenheit-link">78°F</a> /            
+                        <a href="#" id="celsius-link">25°C</a> 
+                        </span>
+    </div>`;
+  }
+
   function findCity(city) {
     let apiKey = "2936a2aac9698ca0c47a6a60f8ab239e";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(displayWeather);
+
+    apiUrl =`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
+    axios.get(apiUrl).then(displayForecast);
   }
   
   function search(event) {
