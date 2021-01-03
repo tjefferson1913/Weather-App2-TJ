@@ -66,3 +66,6 @@ body {
     /* padding: 20px;*/
   }
   
+  .temperature {
+    color: blue;
+  }
