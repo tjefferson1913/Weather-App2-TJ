@@ -1,6 +1,9 @@
 /* eslint-disable no-unused-vars */
 function formatDate(date) {
    //let date =new Date(timestamp);
+   let hours = date.getHours();
+  
+    let minutes = date.getMinutes();
 
     let dayValue = date.getDay();
     let days = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Friday", "Saturday"];
