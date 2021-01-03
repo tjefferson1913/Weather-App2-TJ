@@ -35,7 +35,7 @@ body {
     list-style: none;
     font-size: 16px;
     font-weight: 100px;
-    linne-height 100px;
+    line-height: 100px;
   }
 
   .form-group {
@@ -55,7 +55,7 @@ body {
   }
   
   .weather-search-form {
-    margin-top: 30px;
+    margin-top: px;
     position: absolute;
     right: 10px;
   }
