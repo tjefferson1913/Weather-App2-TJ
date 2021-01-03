@@ -67,5 +67,7 @@ body {
   }
   
   .temperature {
-    color: blue;
+    color: black;
+    font-size: 40px;
+    font-weight: 400;
   }
