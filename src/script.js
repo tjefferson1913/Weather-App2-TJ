@@ -37,11 +37,12 @@ function formatDate(date) {
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
   }
 
-  
+
   
   function convertToCelsius(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
+    celsiusTemperature = response.data.main.temp;
     //temperatureElement = 26;
   }
   
@@ -100,6 +101,8 @@ function formatDate(date) {
   
   let celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", convertToCelsius);
+
+  let celsiusTemperature = null;
   
   //let currentLocationButton = document.querySelector("#current-location-button");
   //currentLocationButton.addEventListener("click", getCurrentLocation);
