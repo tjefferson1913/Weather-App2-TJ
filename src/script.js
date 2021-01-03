@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-function formatDate(timestamp) {
+function formatDate(date) {
    let date =new Date(timestamp);
 
     let dayValue = date.getDay();
