@@ -73,6 +73,6 @@ body {
   }
 
   .temperature-units {
-    position: relative;
+    /*position: relative;*/
     font-size: 16px;
   }
