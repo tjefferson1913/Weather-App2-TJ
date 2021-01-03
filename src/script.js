@@ -51,6 +51,12 @@ function formatDate(date) {
     document.querySelector("#wind").innerHTML = Math.round(
       response.data.wind.speed
     );
+
+    let iconElement = documnet.querySelector("#icon");
+    let descriptionElement = document.querySelector("#description");
+    descriptionElement.innerHTML = response.data.weather[0].description;
+    iconElement.setAttribute("src",` http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    iconElement.setAttribute("alt",response.data.weather[0].description);
   }
   function findCity(city) {
     let apiKey = "2936a2aac9698ca0c47a6a60f8ab239e";
@@ -94,8 +100,4 @@ function formatDate(date) {
   let currentLocationButton = document.querySelector("#current-location-button");
   currentLocationButton.addEventListener("click", getCurrentLocation);
 
-  let iconElement = documnet.querySelector("#icon");
-  let descriptionElement = document.querySelector("#description");
-  descriptionElement.innerHTML = response.data.weather[0].description;
-  iconElement.setAttribute("src",` http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-  iconElement.setAttribute("alt",response.data.weather[0].description);
+ 
