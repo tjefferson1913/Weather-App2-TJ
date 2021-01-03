@@ -54,7 +54,7 @@ function formatDate(date) {
   }
   function findCity(city) {
     let apiKey = "2936a2aac9698ca0c47a6a60f8ab239e";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(displayWeather);
   }
   
