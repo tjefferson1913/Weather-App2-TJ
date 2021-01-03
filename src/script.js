@@ -1,8 +1,14 @@
 /* eslint-disable no-unused-vars */
 function formatDate(date) {
     let hours = date.getHours();
+    if (hours < 10) {
+      hours =`0${hours}`;
+    }
   
     let minutes = date.getMinutes();
+    if (minutes < 10) {
+      minutes =`0${minutes}`;
+    }
   
     let dayValue = date.getDay();
     let days = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Friday", "Saturday"];
@@ -28,9 +34,26 @@ function formatDate(date) {
     let year = date.getFullYear();
     let currentDate = date.getDate();
   
-   // return `${day}, ${month} ${currentDate}, ${year}  ${hours}:${minutes}`;
-    return `${day}, ${month} ${currentDate}, ${year}`;
+   return `${day}, ${month} ${currentDate}, ${year}  ${hours}:${minutes}`;
+    //return `${day}, ${month} ${currentDate}, ${year}`;
   }
+
+  function formatHours(timestamp) {
+    let currentDate = date.getDate();
+    let hours = date.getHours();
+    if (hours < 10) {
+      hours =`0${hours}`;
+    }
+  
+    let minutes = date.getMinutes();
+    if (minutes < 10) {
+      minutes =`0${minutes}`;
+    }
+   
+    return `${hours}:${minutes}`;
+
+  }
+
   function convertToFahrenheit(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
@@ -73,14 +96,18 @@ function formatDate(date) {
 
     forecastElement.innerHTML = `
     <div class="col-2">
-       12:00
-        <br />   
-    <i class="fas fa-sun sunicon1"></i>
-    <br />
+    <h3>
+      ${formatHours(forecast.dt * 1000)}
+      </h3>   
+    <img
+      src="https://openweathermap.org/img/wn/${forecast.data.weather[0].icon}@2x.png"
+    />
     <div class="weather-forecast-temperature">
-    <strong>${forecast.main.temp_max}</strong>°F                     
+    <strong>${Math.round(forecast.main.temp_max)}°F</strong> |  
+    ${Math.round(forecast.main.temp_min)}°F                   
     </div>
-    </div>`;
+    </div>
+    `;
   }
 
   function findCity(city) {
