@@ -81,7 +81,7 @@ function formatDate(date) {
     <br />
     <span> 
     <div class="weather-forecast-temperature">
-    <strong>${forecast.main.temp_max}</strong> 78°F                     
+    <strong>${forecast.main.temp_max}</strong>°F                     
     </div>
                         </span>
     </div>`;
