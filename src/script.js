@@ -43,8 +43,8 @@ function formatDate(date) {
   function convertToCelsius(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
-    celsiusTemperature = response.data.main.temp;
-    temperatureElement.innerHTML = celsiusTemperature;
+    celsiusTemperature = Math.round(response.data.main.temp);
+    temperatureElement.innerHTML = Math.round(celsiusTemperature);
     //temperatureElement = 26;
   }
   
