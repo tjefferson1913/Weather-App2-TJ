@@ -33,7 +33,11 @@ function formatDate(date) {
   function convertToFahrenheit(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
+    let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
   }
+
+  
   
   function convertToCelsius(event) {
     event.preventDefault();
