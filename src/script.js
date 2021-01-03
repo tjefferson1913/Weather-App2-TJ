@@ -33,9 +33,9 @@ function formatDate(date) {
     //return `${day}, ${month} ${currentDate}, ${year}`;
   }
 
-  /*function formatHours(timestamp) {
+  function formatHours(date) {
     //let date =new Date(timestamp);
-    /*let hours = date.getHours();
+    let hours = date.getHours();
     if (hours < 10) {
       hours =`0${hours}`;
     }
@@ -47,7 +47,7 @@ function formatDate(date) {
    
     return `${hours}:${minutes}`;
 
-  }*/
+  }
 
   function convertToFahrenheit(event) {
     event.preventDefault();
