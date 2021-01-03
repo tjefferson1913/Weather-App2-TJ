@@ -93,4 +93,7 @@ function formatDate(date) {
   
   let currentLocationButton = document.querySelector("#current-location-button");
   currentLocationButton.addEventListener("click", getCurrentLocation);
+
+  let iconElement = documnet.querySelector("#icon");
+  iconElement.setAttribute("src",` http://openweathermap.org/img/wn/${response.data.weather.[0].icon}@2x.png`);
   
