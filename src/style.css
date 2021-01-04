@@ -63,8 +63,8 @@ li {
 
 .weather-app {
   border: 1px solid #dadde1;
-  /*padding: 20px;*/
-  border-radius: 5px;
+  /*padding: 20px;
+  border-radius: 5px;*/
   max-width: 630px;
   margin: 30px auto;
 }
