@@ -102,3 +102,7 @@ p#date {
   font-style: normal;
   font-variant: normal;
 }
+
+.link {
+  position: center; 
+}
