@@ -63,9 +63,9 @@ li {
 
 .weather-app {
   border: 1px solid #dadde1;
-  padding: 20px;
+  /*padding: 20px;*/
   border-radius: 5px;
-  max-width: 635px;
+  max-width: 630px;
   margin: 30px auto;
 }
 .temperature {
