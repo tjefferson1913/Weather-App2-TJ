@@ -24,8 +24,8 @@ function formatDate(date) {
   let month = months[monthValue];
   let year = date.getFullYear();
   let currentDate = date.getDate();
-  return `${day}, ${month} ${currentDate}, ${year}  ${hours}:${minutes}`;
-  //return `${day}, ${month} ${currentDate}, ${year}`;
+  //return `${day}, ${month} ${currentDate}, ${year}  ${hours}:${minutes}`;
+  return `${day}, ${month} ${currentDate}, ${year}`;
 }
 function formatHours(timestamp) {
   let date = new Date(timestamp);

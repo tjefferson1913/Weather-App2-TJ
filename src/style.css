@@ -1,8 +1,8 @@
 body {
   font-family: "Brush Script MT", cursive;
-  /*font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
-    color: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); */
-  color: linear-gradient(to right, #ddd6f3, #faaca8);
+  /*font-family: Cerebri Sans, Helvetica, Arial, sans-serif;*/
+    color: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); 
+  /* color: linear-gradient(to right, #ddd6f3, #faaca8);*/
 }
 h1 {
   font-family: "Brush Script MT", cursive;
