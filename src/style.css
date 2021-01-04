@@ -1,22 +1,21 @@
 body {
-    font-family: "Brush Script MT", cursive; 
-    /*font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+  font-family: "Brush Script MT", cursive;
+  /*font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
     color: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); */
-    color: linear-gradient(to right, #ddd6f3, #faaca8);
-  }
-  
-  h1 { font-family: "Brush Script MT", cursive; 
-    font-size: 40px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 900; 
-    line-height: 48px; 
-    margin : 0;
-    color: black;
-    text-align: center;
-  }
-  
-  /*  old h1
+  color: linear-gradient(to right, #ddd6f3, #faaca8);
+}
+h1 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 48px;
+  margin: 0;
+  color: black;
+  text-align: center;
+}
+/*  old h1
   h1 {
     text-align: center;
     font-size: 34px;
@@ -27,82 +26,66 @@ body {
     color: black;
   }
   */
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    list-style: none;
-    font-size: 16px;
-    font-weight: 100px;
-    text-transform: capitalize;
-  }
-
-  .form-group {
-    position: center;
-    font-size: 18px;
-    line-height: 28px;
-    margin-top: 60px;
-  }
-  
-  .sunicon1 {
-    color: orange;
-    font-size: 30px;
-  }
-  
-  .form-control {
-    position: center;
-  }
-  
-  .weather-search-form {
-    margin-top: px;
-    position: absolute;
-    right: 10px;
-  }
-
-  .weather-app {
-    max-width: 600px;
-    margin: 30px auto;
-    /* border: 1px solid #dadde1;*/
-    /* padding: 20px;*/
-  }
-  
-  .temperature {
-    color: black;
-    font-size: 40px;
-    font-weight: 400;
-    left: 0;
-  }
-
-  .temperature-units {
-    position: relative;
-    font-size: 16px;
-    top: -15px;
-  }
-
-  .temperature .active {
-    color: rgb(33,33,33);
-    cursor: default;
-  }
-  
-  .temperature .active:hover {
-    text-decoration: none;
-  }
-  /*.img {
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 100px;
+  text-transform: capitalize;
+}
+.form-group {
+  position: center;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 60px;
+}
+.sunicon1 {
+  color: orange;
+  font-size: 30px;
+}
+.form-control {
+  position: center;
+}
+.weather-search-form {
+}
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  /* border: 1px solid #dadde1;*/
+  /* padding: 20px;*/
+}
+.temperature {
+  color: black;
+  font-size: 40px;
+  font-weight: 400;
+  left: 0;
+}
+.temperature-units {
+  position: relative;
+  font-size: 16px;
+  top: -15px;
+}
+.temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.temperature .active:hover {
+  text-decoration: none;
+}
+/*.img {
     margin-left: 5px;
     height: 30px;
     width: 30px;
   }*/
-
-  /*.icon {
+/*.icon {
     margin-left: 5px;
     height: 30px;
     width: 30px;
   }*/
-
-  /*.img {
+/*.img {
     float: left;
     height: 64px;
     margin-top: unset;
@@ -113,11 +96,9 @@ body {
   height: 64px;
   width: 64px;
 }
-
 p#date {
- font-family: "Brush Script MT", cursive; 
- font-size: 25px; 
- font-style: normal; 
- font-variant: normal; 
+  font-family: "Brush Script MT", cursive;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
 }
-  
