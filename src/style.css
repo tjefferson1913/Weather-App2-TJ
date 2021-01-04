@@ -49,13 +49,18 @@ li {
 .form-control {
   position: center;
 }
-.weather-search-form {
-}
-.weather-app {
+/*.weather-search-form {
+}*/
+
+.weather-app-wrapper {
   max-width: 635px;
   margin: 30px auto;
-  /* border: 1px solid #dadde1;*/
-  /* padding: 20px;*/
+}
+
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 20px;
+  border-radius: 5px;
 }
 .temperature {
   color: black;
